@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>Exemplo HTML 4</title>
+        <meta charset="UTF-8">
+        <meta name="description" content="Formulários">
+    </head>
+    <body>
+        <form name="form1" method="POST" action="">
+            <input name="oculto" type="hidden" value="algumacoisa"/>
+
+            <!-- Exemplo do uso de checkbox -->
+            Escolha um carro:<br>
+            <input type="checkbox" name="carros" value="Camaro"/>Camaro<br>
+            <input type="checkbox" name="carros" value="Ferrari"/>Ferrari<br/><br/>
+
+            <!-- Input do tipo button e com um evento aplicado  -->
+            <input name="botao" type="button" value="Clique aqui" onclick="alert('oi')" />
+            <br/><br/>
+
+            Escolha um arquivo <input name="arquivo" type="file" />
+
+            <br/><br/>
+            Colocando uma imagem como botão <br/>
+            <input name="imagem" type="image" src="_imagens/unicsul.jpg" /><br/>
+
+            <!-- Exemplo do uso de radio -->
+            Escolha um sexo: <br/>
+            <input type="radio" name="sexo" value="F"/>Feminino<br/>
+            <input type="radio" name="sexo" value="M"/>Masculino<br/>
+
+            Name: <input type="text" name="nome" autofocus="autofocus" placeholder="Nome completo"><br/>
+            Senha: <input type="password" name="senha" placeholder="Informe a senha"><br/>
+            E-mail: <input type="email" name="usermail" placeholder="Digite seu email"><br/>
+            URL: <input type="url" name="homepage" placeholder="Copie e cole a Url aqui"><br/>
+            <br/><br/>
+
+            <!-- Exemplo do uso do datalist associado com o input do tipo list (mesmo id)-->
+            Lista de Opções:
+            <input list="frutas" name="fruta" />
+            <datalist id="frutas">
+                <option value="Maçã"></option>
+                <option value="Melancia"></option>
+                <option value="Pera"></option>
+                <option value="Uva"></option>
+            </datalist>
+
+            <br/><br/>
+            <button type="button">
+                <img src="_imagens/unicsul.jpg" width="50px" height="50px">
+            </button>
+
+            <br/><br/>
+            Selecione uma linguagem:<br/>
+            <select>
+                <option value="Java">Java</option>
+                <option value="PHP">PHP</option>
+                <option value="JSP">JSP</option>
+                <option value="HTML">HTML</option>
+            </select>
+            <br/><br/>
+
+            Comentários: <br/>
+            <textarea id="comentario" rows="8" cols="70" placeholder="Deixe aqui sua dúvida, elogio ou sugestão"></textarea><br/>
+            <input type="submit" value="Enviar"><br>
+        </form>
+    </body>
+</html>
